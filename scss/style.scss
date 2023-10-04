@@ -1,0 +1,65 @@
+@import "fonts";
+@import "vars";
+@import "global";
+@import "reset";
+@import "header";
+@import "footer";
+
+@media (max-width: 900px) {
+
+  .nav {
+    position: fixed;
+    inset: 0;
+    background: rgb(20, 20, 20);
+    z-index: 10;
+    padding: 26vh 15px 30px;
+    font-size: 24px;
+
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .body--opened-menu .nav {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+
+  .burger-icon {
+    display: flex;
+
+  }
+
+  .search__block {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+
+  input {
+    display: none;
+  }
+
+  .shopping-bag {
+    margin-left: 5px;
+  }
+
+  .header__logo {
+  margin-left: 35px;
+  }
+
+  .header__top {
+    padding-top: 24px;
+  }
+
+}
